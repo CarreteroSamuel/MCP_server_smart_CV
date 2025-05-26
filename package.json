@@ -1,0 +1,25 @@
+{
+  "name": "mcp-cv-server",
+  "version": "1.0.0",
+  "description": "Serveur MCP pour CV intelligent avec extraction PDF",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "build": "npm install"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "pdf-parse": "^1.1.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "zod": "^3.22.4"
+  },
+  "bin": {
+    "mcp-cv-server": "./src/index.js"
+  },
+  "keywords": ["mcp", "cv", "resume", "pdf", "claude"],
+  "author": "Votre nom",
+  "license": "MIT"
+}

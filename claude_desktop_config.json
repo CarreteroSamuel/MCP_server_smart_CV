@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "mcp-cv-server": {
+      "command": "node",
+      "args": ["./path/to/your/mcp-cv-server/src/index.js"],
+      "env": {
+        "CV_PDF_PATH": "./path/to/your/cv.pdf"
+      }
+    }
+  }
+}
