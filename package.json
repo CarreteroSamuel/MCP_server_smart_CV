@@ -7,19 +7,34 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
-    "build": "npm install"
+    "build": "npm install",
+    "client": "node index.js",
+    "client:test": "node index.js --test",
+    "client:daemon": "node index.js --daemon",
+    "setup": "npm run setup:check && npm run setup:config",
+    "setup:check": "node -e \"console.log('✅ Node.js version:', process.version); console.log('📦 Dependencies OK')\"",
+    "setup:config": "node -e \"console.log('📋 Ajoutez cette config à Claude Desktop:'); console.log(JSON.stringify({mcpServers:{'mcp-cv-server':{command:'node',args:[process.cwd()+'/index.js'],env:{CV_PDF_PATH:process.cwd()+'/cv.pdf'}}}}, null, 2))\""
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.4.0",
-    "pdf-parse": "^1.1.1",
     "fs": "0.0.1-security",
     "path": "^0.12.7",
+    "pdf-parse": "^1.1.1",
     "zod": "^3.22.4"
   },
   "bin": {
-    "mcp-cv-server": "./src/index.js"
+    "mcp-cv-server": "./src/index.js",
+    "mcp-cv-client": "./index.js"
   },
-  "keywords": ["mcp", "cv", "resume", "pdf", "claude"],
+  "keywords": [
+    "mcp",
+    "cv",
+    "resume",
+    "pdf",
+    "claude",
+    "client",
+    "server"
+  ],
   "author": "Votre nom",
   "license": "MIT"
 }

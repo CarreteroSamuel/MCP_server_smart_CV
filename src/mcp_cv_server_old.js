@@ -31,7 +31,7 @@ class CVMCPServer {
     );
 
     this.cvData = null;
-    this.cvPath = process.env.CV_PDF_PATH || "./cv.pdf";
+    this.cvPath = process.env.CV_PDF_PATH || "./files/cv.pdf";
     this.setupHandlers();
   }
 

@@ -1,5 +1,27 @@
+# Ignorer les fichiers de sortie et temporaires
 files/*
+!files/.gitkeep
 
-node_modules
+# Dépendances Node.js
+node_modules/
 
+# Fichiers de lock
 package-lock.json
+yarn.lock
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+
+# Environnements
+.env
+.env.*
+
+# Tests et coverage
+coverage/
+test/data/

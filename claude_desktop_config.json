@@ -2,9 +2,9 @@
   "mcpServers": {
     "mcp-cv-server": {
       "command": "node",
-      "args": ["./path/to/your/mcp-cv-server/src/index.js"],
+      "args": ["D:\\My_apps\\Serveurs MCP\\MCP_server_smart_CV\\src\\index.js"],
       "env": {
-        "CV_PDF_PATH": "./path/to/your/cv.pdf"
+        "CV_PDF_PATH": "D:\\My_apps\\Serveurs MCP\\MCP_server_smart_CV\\files\\cv.pdf"
       }
     }
   }
